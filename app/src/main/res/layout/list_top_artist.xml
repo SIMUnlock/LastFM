@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    >
+
+        <ImageView
+            android:id="@+id/imgArtist"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:tint="#7d000000"
+
+            />
+        <TextView
+            android:id="@+id/tvData1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imgArtist"
+            android:layout_alignTop="@+id/imgArtist"
+            android:layout_alignRight="@+id/imgArtist"
+            android:layout_alignBottom="@+id/imgArtist"
+            android:layout_margin="1dp"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:textColor="@android:color/background_light"/>
+
+
+        <TextView
+            android:id="@+id/tvData2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imgArtist"
+            android:layout_alignTop="@+id/imgArtist"
+            android:layout_alignRight="@+id/imgArtist"
+            android:layout_alignBottom="@+id/imgArtist"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/ic_play"
+            android:drawableRight="@drawable/ic_listener"
+            android:typeface="serif"
+            android:textColor="@android:color/background_light"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+
