@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -64,7 +65,7 @@ public class TopTracksFragment extends Fragment{
                 RecyclerView recyclerView = view.findViewById (R.id.trackList);
 
                 //Cambiar el new LinearLayoutManager por un new GridLayoutManager de 2 columnas
-                recyclerView.setLayoutManager (new LinearLayoutManager(getContext ()));
+                recyclerView.setLayoutManager (new GridLayoutManager(getContext (), 2, GridLayoutManager.VERTICAL, false));
                 recyclerView.setAdapter (new TopTracksAdapter (getContext(), tracks));
 
 

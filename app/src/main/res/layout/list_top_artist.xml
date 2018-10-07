@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -13,16 +13,21 @@
             android:tint="#7d000000"
 
             />
+
+    <LinearLayout
+        android:id="@+id/linerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+>
         <TextView
             android:id="@+id/tvData1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/imgArtist"
-            android:layout_alignTop="@+id/imgArtist"
-            android:layout_alignRight="@+id/imgArtist"
-            android:layout_alignBottom="@+id/imgArtist"
             android:layout_margin="1dp"
-            android:gravity="center"
+            android:layout_gravity="center"
             android:textSize="25dp"
             android:textStyle="bold"
             android:typeface="serif"
@@ -33,12 +38,9 @@
             android:id="@+id/tvData2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/imgArtist"
-            android:layout_alignTop="@+id/imgArtist"
-            android:layout_alignRight="@+id/imgArtist"
-            android:layout_alignBottom="@+id/imgArtist"
-            android:layout_marginTop="100dp"
-            android:gravity="center"
+            android:layout_below="@+id/tvData1"
+            android:layout_gravity="center"
+            android:paddingTop="20dp"
             android:textSize="18dp"
             android:textStyle="bold"
             android:drawableLeft="@drawable/ic_play"
@@ -46,8 +48,8 @@
             android:typeface="serif"
             android:textColor="@android:color/background_light"
             />
-
-    </RelativeLayout>
+</LinearLayout>
+    </FrameLayout>
 
 
 
